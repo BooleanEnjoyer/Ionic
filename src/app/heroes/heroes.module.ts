@@ -14,7 +14,7 @@ import {FormsModule} from "@angular/forms";
   imports: [
     CommonModule,
     IonicModule,
-    FormsModule,
+    FormsModule
   ]
 })
 export class HeroesModule { }
