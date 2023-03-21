@@ -1,20 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {HeroesPage} from "./heroes.component";
 import {IonicModule} from "@ionic/angular";
 import {FormsModule} from "@angular/forms";
+import {HeroDetailComponent} from "./hero-detail.component";
 
 
 
 @NgModule({
-  declarations: [HeroesPage],
-  exports: [
-    HeroesPage
-  ],
+  declarations: [HeroDetailComponent],
   imports: [
     CommonModule,
     IonicModule,
-    FormsModule,
+    FormsModule
   ]
 })
-export class HeroesModule { }
+export class HeroDetailModule { }
