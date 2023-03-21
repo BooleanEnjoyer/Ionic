@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {IonicModule} from "@ionic/angular";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HeroDetailComponent} from "./hero-detail.component";
 
 
@@ -11,7 +11,8 @@ import {HeroDetailComponent} from "./hero-detail.component";
   imports: [
     CommonModule,
     IonicModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class HeroDetailModule { }
