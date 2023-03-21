@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import {HeroesPage} from "./heroes.component";
 import {IonicModule} from "@ionic/angular";
 import {FormsModule} from "@angular/forms";
-import {ExploreContainerComponentModule} from "../explore-container/explore-container.module";
 
 
 
@@ -14,7 +13,6 @@ import {ExploreContainerComponentModule} from "../explore-container/explore-cont
     IonicModule,
     CommonModule,
     FormsModule,
-    ExploreContainerComponentModule
   ]
 })
 export class HeroesModule { }
