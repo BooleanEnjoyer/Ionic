@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {HeroesPage} from "./heroes.component";
 import {IonicModule} from "@ionic/angular";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -14,7 +15,9 @@ import {FormsModule} from "@angular/forms";
   imports: [
     CommonModule,
     IonicModule,
-    FormsModule
+    FormsModule,
+    RouterModule,
+    ReactiveFormsModule
   ]
 })
 export class HeroesModule { }
