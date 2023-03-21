@@ -8,6 +8,9 @@ import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [HeroesPage],
+  exports: [
+    HeroesPage
+  ],
   imports: [
     CommonModule,
     IonicModule,
