@@ -9,7 +9,7 @@ const routes: Routes = [
     component: Tab2Page,
   },
   {
-    path: 'tabs/tab2/detail/:id',
+    path: 'detail/:id',
     component: HeroDetailComponent,
   }
 ];
