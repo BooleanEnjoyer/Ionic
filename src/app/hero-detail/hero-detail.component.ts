@@ -28,8 +28,6 @@ export class HeroDetailComponent  implements OnInit {
   }
 
   goBack(): void {
-    this.getHero();
-    this.heroService.getHeroes();
     this.location.back();
   }
 

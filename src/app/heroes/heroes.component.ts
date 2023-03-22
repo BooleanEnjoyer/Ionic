@@ -11,7 +11,7 @@ export class HeroesPage implements OnInit{
 
   heroes: Hero[] = [];
 
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroService ) { }
 
   ngOnInit(): void {
     this.getHeroes();
@@ -19,6 +19,7 @@ export class HeroesPage implements OnInit{
   ionViewWillEnter(): void{
     this.getHeroes();
   }
+
 
   getHeroes(): void {
     this.heroService.getHeroes()

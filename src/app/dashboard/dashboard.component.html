@@ -1,13 +1,15 @@
-<h2>Top Heroes</h2>
-<div class="heroes-menu">
-  <a *ngFor="let hero of heroes"
-     routerLink="/tabs/tab3/detail/{{hero.id}}">
-    {{hero.name}}
-  </a>
+<div (click)="getHeroes()">
+  <h2>Top Heroes</h2>
+  <div class="heroes-menu">
+    <a *ngFor="let hero of heroes"
+       routerLink="/tabs/tab3/detail/{{hero.id}}">
+      {{hero.name}}
+    </a>
 
+  </div>
+  <button type="button"  (click)="getHeroes()">
+    Show heroes
+  </button>
+  <app-search-hero></app-search-hero>
+  <app-messages></app-messages>
 </div>
-<button type="button"  (click)="getHeroes()">
-  Show heroes
-</button>
-<app-search-hero></app-search-hero>
-<app-messages></app-messages>
