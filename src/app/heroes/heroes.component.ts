@@ -16,9 +16,6 @@ export class HeroesPage implements OnInit{
   ngOnInit(): void {
     this.getHeroes();
   }
-  ngOnDestroy():void {
-    this.getHeroes();
-  }
 
   getHeroes(): void {
     this.heroService.getHeroes()
