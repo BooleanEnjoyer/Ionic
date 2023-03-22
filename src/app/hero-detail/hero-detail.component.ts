@@ -35,12 +35,6 @@ export class HeroDetailComponent  implements OnInit {
     this.hero.id=id;
     this.hero.name = name.trim();
       this.heroService.updateHero(this.hero)
-        .subscribe(
-          (response: Hero) => {
-            console.log(response);
-            this.getHero();
-          },
-          () => this.goBack()
-        );
+        .subscribe(() => this.goBack());
   }
 }
