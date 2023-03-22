@@ -1,5 +1,5 @@
 .heroes {
-  margin: 0 0 2em 0;
+  margin: auto;
   list-style-type: none;
   padding: 0;
   width: 15em;
@@ -27,8 +27,8 @@ input {
   text-decoration: none;
   background-color: #EEE;
   margin: .5em;
-  padding: .3em 0;
-  height: 1.6em;
+  padding: .35em 0 2.3em;
+  height: 2em;
   border-radius: 4px;
   display: block;
   width: 100%;
@@ -48,16 +48,18 @@ input {
   display: inline-block;
   font-size: small;
   color: white;
-  padding: 0.8em 0.7em 0 0.7em;
+  padding: 1.1em 0.7em 2.3em 0.7em;
   background-color: #405061;
   line-height: 1em;
   position: relative;
   left: -1px;
   top: -4px;
-  height: 1.8em;
+  height: 2em;
   min-width: 16px;
   text-align: right;
   margin-right: .8em;
+  margin-bottom: 3em;
+  margin-top: -0.2em;
   border-radius: 4px 0 0 4px;
 }
 
@@ -76,11 +78,11 @@ button.delete {
   position: absolute;
   left: 210px;
   top: 5px;
-  background-color: white;
-  color:  #525252;
+  background-color: #405061;
+  color:  white;
   font-size: 1.1rem;
-  margin: 0;
-  padding: 1px 10px 3px 10px;
+  margin-top:0.1em;
+  padding: 5px 10px 7px 10px;
 }
 
 button.delete:hover {
