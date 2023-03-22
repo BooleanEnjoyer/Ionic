@@ -9,7 +9,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./hero-detail.component.scss'],
 })
 export class HeroDetailComponent  implements OnInit {
-  hero!: Hero;
+  hero: Hero | undefined;
 
   constructor(
     private route: ActivatedRoute,
