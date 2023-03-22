@@ -4,6 +4,7 @@ import {HeroesPage} from "./heroes.component";
 import {IonicModule} from "@ionic/angular";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
+import {MessagesModule} from "../messages/messages.module";
 
 
 
@@ -17,7 +18,8 @@ import {RouterModule} from "@angular/router";
     IonicModule,
     FormsModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MessagesModule
   ]
 })
 export class HeroesModule { }

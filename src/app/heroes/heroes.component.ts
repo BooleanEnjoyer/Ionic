@@ -16,6 +16,9 @@ export class HeroesPage implements OnInit{
   ngOnInit(): void {
     this.getHeroes();
   }
+  ionViewWillEnter(): void{
+    this.getHeroes();
+  }
 
   getHeroes(): void {
     this.heroService.getHeroes()
