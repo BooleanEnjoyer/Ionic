@@ -6,5 +6,5 @@
     <input id="hero-name" #heroName placeholder="Hero name"/>
   </div>
   <button type="button" (click)="goBack()">go back</button>
-  <button type="button" (click)="save(heroName.name, hero.id); heroName.value=''">save</button>
+  <button type="button" (click)="save(heroName.value, hero.id); heroName.value=''">save</button>
 </div>
