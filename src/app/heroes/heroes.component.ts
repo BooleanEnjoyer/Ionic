@@ -19,9 +19,7 @@ export class HeroesPage implements OnInit{
   ngOnChanges(): void{
     this.getHeroes();
   }
-  ngDoCheck(): void{
-    this.getHeroes();
-  }
+
   getHeroes(): void {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes);
