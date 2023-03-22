@@ -1,17 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Tab2Page } from './tab2.page';
-import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
+
 
 const routes: Routes = [
   {
     path: '',
     component: Tab2Page,
   },
-  // {
-  //   path: 'detail/:id',
-  //   component: HeroDetailComponent,
-  // }
 ];
 
 @NgModule({
