@@ -7,9 +7,7 @@ input {
   padding: .5rem;
 }
 button {
-  margin-left: 18%;
   margin-top: 20px;
-  margin-right: .5rem;
   background-color: #eee;
   color:black;
   padding: 1rem;
@@ -25,8 +23,24 @@ button:disabled {
   cursor: auto;
 }
 .hero-info{
+  margin : auto;
+  padding: 5%;
   text-align: center;
 }
-.lab{
-  margin-left:5%;
+.hero-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+.lab{
+  display: flex;
+  justify-content: center;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+.left{
+
+}
+

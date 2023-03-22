@@ -1,12 +1,13 @@
 <div *ngIf="hero">
   <h2 class="hero-info">{{hero.id}} {{hero.name}} Details</h2>
 <!--  <div><span>id: </span>{{hero.id}}</div>-->
-  <div>
-    <label for="hero-name" class="lab">Rename: </label>
+  <div class="lab">
+    <label for="hero-name" class="hero-name">Rename: </label>
     <input id="hero-name" #heroName placeholder="Hero name"/>
   </div>
-  <button type="button" (click)="goBack()">go back</button>
-  <button type="button" (click)="save(heroName.value, hero.id); heroName.value=''">save</button>
-
+  <div class="buttons">
+    <button type="button" (click)="goBack()" class="left">go back</button>
+    <button type="button" (click)="save(heroName.value, hero.id); heroName.value=''" class="right">save</button>
+  </div>
   <app-messages></app-messages>
 </div>

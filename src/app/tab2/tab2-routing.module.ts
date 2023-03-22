@@ -8,10 +8,10 @@ const routes: Routes = [
     path: '',
     component: Tab2Page,
   },
-  {
-    path: 'detail/:id',
-    component: HeroDetailComponent,
-  }
+  // {
+  //   path: 'detail/:id',
+  //   component: HeroDetailComponent,
+  // }
 ];
 
 @NgModule({

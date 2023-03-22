@@ -8,8 +8,6 @@ h2 {
 .clear {
   color: #333;
   background-color: #eee;
-  margin-bottom: 12px;
-  margin-left:30%;
   padding: 1rem;
   border-radius: 4px;
   font-size: 1rem;
@@ -20,8 +18,12 @@ h2 {
   background-color: #42545C;
 }
 .cont{
-  margin: auto;
+
 }
 .msg{
   text-align: center;
+}
+.butt{
+  display: flex;
+  justify-content: center;
 }
