@@ -9,7 +9,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./hero-detail.component.scss'],
 })
 export class HeroDetailComponent  implements OnInit {
-  hero: Hero | undefined;
+  hero!: Hero;
 
   constructor(
     private route: ActivatedRoute,
@@ -33,7 +33,8 @@ export class HeroDetailComponent  implements OnInit {
 
   save(name: string): void {
     name = name.trim();
-      this.heroService.updateHero({ name } as Hero)
+    this.hero.name=name
+      this.heroService.updateHero(this.hero)
         .subscribe(() => this.goBack());
   }
 }
