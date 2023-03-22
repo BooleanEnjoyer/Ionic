@@ -5,6 +5,7 @@ import {IonicModule} from "@ionic/angular";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
 import {MessagesModule} from "../messages/messages.module";
+import {SearchHeroModule} from "../search-hero/search-hero.module";
 
 
 
@@ -16,7 +17,8 @@ import {MessagesModule} from "../messages/messages.module";
     FormsModule,
     RouterModule,
     ReactiveFormsModule,
-    MessagesModule
+    MessagesModule,
+    SearchHeroModule
   ],
   exports: [DashboardComponent]
 })
