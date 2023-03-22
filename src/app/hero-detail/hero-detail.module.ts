@@ -13,6 +13,7 @@ import {HeroDetailComponent} from "./hero-detail.component";
     IonicModule,
     FormsModule,
     ReactiveFormsModule
-  ]
+  ],
+  exports: [HeroDetailComponent]
 })
 export class HeroDetailModule { }

@@ -8,6 +8,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import {HeroesModule} from "../heroes/heroes.module";
 import {MessagesModule} from "../messages/messages.module";
+import {HeroDetailModule} from "../hero-detail/hero-detail.module";
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {MessagesModule} from "../messages/messages.module";
     ExploreContainerComponentModule,
     Tab2PageRoutingModule,
     HeroesModule,
-    MessagesModule
+    MessagesModule,
+    HeroDetailModule
   ],
   declarations: [Tab2Page]
 })
