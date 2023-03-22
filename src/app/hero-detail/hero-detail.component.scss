@@ -7,9 +7,11 @@ input {
   padding: .5rem;
 }
 button {
+  margin-left: 18%;
   margin-top: 20px;
   margin-right: .5rem;
   background-color: #eee;
+  color:black;
   padding: 1rem;
   border-radius: 4px;
   font-size: 1rem;
@@ -21,4 +23,10 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+.hero-info{
+  text-align: center;
+}
+.lab{
+  margin-left:5%;
 }
