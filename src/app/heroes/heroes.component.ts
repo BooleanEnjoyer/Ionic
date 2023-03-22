@@ -16,7 +16,7 @@ export class HeroesPage implements OnInit{
   ngOnInit(): void {
     this.getHeroes();
   }
-  ngOnChanges(): void{
+  ngAfterViewInit():void {
     this.getHeroes();
   }
 
