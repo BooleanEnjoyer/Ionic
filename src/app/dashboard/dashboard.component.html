@@ -1,9 +1,13 @@
 <h2>Top Heroes</h2>
 <div class="heroes-menu">
   <a *ngFor="let hero of heroes"
-     routerLink="/tabs/tab3/{{hero.id}}">
+     routerLink="/tabs/tab3/detail/{{hero.id}}">
     {{hero.name}}
   </a>
-</div>
 
-<!--<app-hero-search></app-hero-search>-->
+</div>
+<button type="button"  (click)="getHeroes()">
+  Show heroes
+</button>
+
+<app-messages></app-messages>
