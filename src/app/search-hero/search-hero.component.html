@@ -1,17 +1,31 @@
-<div class="search-component">
-  <label for="search-box" class="search-name">Hero Search</label>
-  <div class="search">
-    <input #searchBox id="search-box" (input)="search(searchBox.value)"/>
-  </div>
-  <div class="result">
-    <ul class="search-result">
-<!--      <div class="lis">-->
-      <li *ngFor="let hero of heroes$ | async">
-        <a routerLink="/tabs/tab3/detail/{{hero.id}}">
-          {{hero.name}}
-        </a>
-      </li>
-<!--      </div>-->
-    </ul>
-  </div>
-</div>
+<label for="search-box" class="search-name">Hero Search</label>
+    <div class="search">
+      <input #searchBox id="search-box" (input)="search(searchBox.value)"/>
+    </div>
+      <ul class="search-result">
+        <li *ngFor="let hero of heroes$ | async">
+          <a routerLink="/tabs/tab3/detail/{{hero.id}}">
+            {{hero.name}}
+          </a>
+        </li>
+      </ul>
+
+<!--<div class="search-component">-->
+<!--  <label for="search-box" class="search-name">Hero Search</label>-->
+<!--  <div class="containers">-->
+<!--    <div class="search">-->
+<!--      <input #searchBox id="search-box" (input)="search(searchBox.value)"/>-->
+<!--    </div>-->
+<!--    <div class="result">-->
+<!--      <ul class="search-result">-->
+<!--        &lt;!&ndash;        <div class="lis">&ndash;&gt;-->
+<!--        <li *ngFor="let hero of heroes$ | async">-->
+<!--          <a routerLink="/tabs/tab3/detail/{{hero.id}}">-->
+<!--            {{hero.name}}-->
+<!--          </a>-->
+<!--        </li>-->
+<!--        &lt;!&ndash;        </div>&ndash;&gt;-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
