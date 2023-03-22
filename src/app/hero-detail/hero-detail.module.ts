@@ -6,6 +6,7 @@ import {HeroDetailComponent} from "./hero-detail.component";
 
 
 
+
 @NgModule({
   declarations: [HeroDetailComponent],
   imports: [
