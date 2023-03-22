@@ -13,10 +13,11 @@ label {
 }
 input {
   padding: .5rem;
-  width: 100%;
+  width: 70%;
   max-width: 600px;
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 input:focus {
@@ -40,8 +41,8 @@ li {
 }
 
 .search-result li a:hover {
-  background-color: #435A60;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 ul.search-result {

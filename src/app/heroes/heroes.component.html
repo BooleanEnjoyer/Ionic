@@ -12,9 +12,6 @@
 
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
-<!--    <a routerLink="detail/{{hero.id}}">  Problem z komponentem nie moze byc
- przewijany w poziomie pomysl do delegacji do tab3 tylko trzeba jakos id
- przeniesc rowniez-->
     <a [routerLink]="['/tabs/tab3/detail',hero.id]">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
